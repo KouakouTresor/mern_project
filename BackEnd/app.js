@@ -1,13 +1,4 @@
-const express = require("express");
-const app = express();
-const mongoose = require("mongoose");
-const morgan = require("morgan")
-require("dotenv/config")
-const api = process.env.API_URL;
-const productRoute = require("./routes/productRoute")
-const categoryRoute = require("./routes/categoryRoute");
-const orderRoute = require("./routes/orderRoute");
-const userRoute = require("./routes/userRoute")
+console.log("hello world")
 
 app.use(express.json())
 app.use(morgan("tiny"));
